@@ -6,6 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
+    
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'template.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -17,6 +18,15 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
+
+# Source - https://stackoverflow.com/a
+# Posted by Diaz, modified by community. See post 'Timeline' for change history
+# Retrieved 2026-01-28, License - CC BY-SA 4.0
+
+...
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "template.settings")
+...
 
 if __name__ == '__main__':
     main()
